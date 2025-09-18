@@ -75,3 +75,6 @@ RUN set -eux; \
 	rm -rf /opt/shadow-src/.git; \
 	rm -rf /opt/shadow-src/build 2>/dev/null || true
 
+# Add shadow to PATH
+ENV PATH="/root/.local/bin:$PATH"
+
